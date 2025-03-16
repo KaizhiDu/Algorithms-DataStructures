@@ -1,7 +1,7 @@
 // BFS for Topological Sorting (Kahn’s Algorithm)
 // 适用于：DAG Directed Acyclic Graph（有向无环图）中的排序问题
 // 解题思路 (Kahn's Algorithm - BFS)
-// Kahn's Algorithm 采用入度 (In-degree) 的概念来完成拓扑排序。
+// Kahn's Algorithm 采用入度 (In-degree) 的概念来完成拓扑排序。（即指向它的边的数量）
 
 function topologicalSort(graph) {
     const inDegree = {};

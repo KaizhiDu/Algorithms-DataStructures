@@ -43,3 +43,10 @@
 搜索特征： 以多个起点同时出发，像波浪一样向外扩展，天然满足最短路径的条件。
 
 Key Word: 最短路径、蔓延传播、多个起点扩散
+
+## topological sort
+DAG Directed Acyclic Graph（有向无环图）
+是否是 DAG ? 判断出队的节点是否等于总结点，如果相等则是DAG 否则则不是
+Kahn's Algorithm 采用入度 (In-degree) 的概念来完成拓扑排序。（即指向它的边的数量）
+
+a -> b inDegree b , graph { a: [b] }
