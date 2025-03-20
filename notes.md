@@ -50,3 +50,6 @@ DAG Directed Acyclic Graph（有向无环图）
 Kahn's Algorithm 采用入度 (In-degree) 的概念来完成拓扑排序。（即指向它的边的数量）
 
 a -> b inDegree b , graph { a: [b] }
+
+key words: 顺序  唯一
+「唯一性」 + 「部分顺序」 → 图论问题 → 拓扑排序 → 保证每步仅有一个入度为 0 的节点
