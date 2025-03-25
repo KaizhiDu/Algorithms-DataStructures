@@ -1,1 +1,13 @@
-[ [ 4, 5, 3 ], [ 2 ], [ 1 ] ]
+TreeNode {
+  val: 4,
+  left: TreeNode {
+    val: 7,
+    left: TreeNode { val: 9, left: null, right: null },
+    right: TreeNode { val: 6, left: null, right: null }
+  },
+  right: TreeNode {
+    val: 2,
+    left: TreeNode { val: 3, left: null, right: null },
+    right: TreeNode { val: 1, left: null, right: null }
+  }
+}
