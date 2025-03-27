@@ -1,13 +1,21 @@
-TreeNode {
-  val: 4,
-  left: TreeNode {
-    val: 7,
-    left: TreeNode { val: 9, left: null, right: null },
-    right: TreeNode { val: 6, left: null, right: null }
+<ref *2> _Node {
+  val: 3,
+  left: <ref *1> _Node {
+    val: 5,
+    left: _Node { val: 6, left: null, right: null, parent: [Circular *1] },
+    right: _Node {
+      val: 2,
+      left: [_Node],
+      right: [_Node],
+      parent: [Circular *1]
+    },
+    parent: [Circular *2]
   },
-  right: TreeNode {
-    val: 2,
-    left: TreeNode { val: 3, left: null, right: null },
-    right: TreeNode { val: 1, left: null, right: null }
-  }
+  right: <ref *3> _Node {
+    val: 1,
+    left: _Node { val: 0, left: null, right: null, parent: [Circular *3] },
+    right: _Node { val: 8, left: null, right: null, parent: [Circular *3] },
+    parent: [Circular *2]
+  },
+  parent: null
 }

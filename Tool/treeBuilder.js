@@ -11,7 +11,7 @@ class BinaryTree {
 		this.root = null;
 	}
 	insert(value) {
-		const newNode = value ? new TreeNode(value) : null;
+		const newNode = new TreeNode(value || 0);
 		if (this.root === null) {
 			this.root = newNode;
 			return;
