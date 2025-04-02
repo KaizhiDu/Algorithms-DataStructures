@@ -71,7 +71,17 @@ key words: 顺序  唯一
 ### 二叉搜索树 BST
 ✅ 每个节点都满足：
 左子树所有节点的值 < 当前节点的值
-
 右子树所有节点的值 > 当前节点的值
-
 每棵子树也都是一个 BST
+基本上需要使用到中序遍历
+```
+    // 中序遍历：先访问左子树，再访问根节点，最后访问右子树。    8, 4, 9, 2, 5, 1, 6, 3, 7
+    midOrderTraversal(node = this.root, result = []) {
+        if (node.left) this.midOrderTraversal(node.left, result);
+        if (node) {
+            result.push(node.value);
+        }
+        if (node.right) this.midOrderTraversal(node.right, result);
+        if (node === this.root) return result;
+    }
+```

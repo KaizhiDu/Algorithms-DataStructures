@@ -1,9 +1,1 @@
-[
-  TreeNode {
-    val: 1,
-    left: TreeNode { val: 2, left: [TreeNode], right: null },
-    right: null
-  },
-  TreeNode { val: 6, left: null, right: null },
-  TreeNode { val: 7, left: null, right: null }
-]
+false
