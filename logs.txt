@@ -1,1 +1,13 @@
-false
+TreeNode {
+  val: 0,
+  left: TreeNode {
+    val: -3,
+    left: TreeNode { val: -10, left: [], right: [] },
+    right: []
+  },
+  right: TreeNode {
+    val: 9,
+    left: TreeNode { val: 5, left: [], right: [] },
+    right: []
+  }
+}
