@@ -1,8 +1,1 @@
-1
-2
-<ref *1> _Node {
-  val: 2,
-  left: _Node { val: 1, left: null, right: null, parent: [Circular *1] },
-  right: _Node { val: 3, left: null, right: null, parent: [Circular *1] },
-  parent: null
-}
+false

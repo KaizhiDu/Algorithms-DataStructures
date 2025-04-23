@@ -2,7 +2,7 @@
 ## 递归
 1> 确定 递归出口
 2> 确定 何时递归
-3> 分治需要的话可以返回任何东西，不用担心，需要额外处理空节点的返回也就是递归出口
+3> 分治需要的话可以返回任何东西所以不用担心，需要额外处理空节点的返回也就是递归出口
 
 # LinkList
 
@@ -91,3 +91,9 @@ key words: 顺序  唯一
         if (node === this.root) return result;
     }
 ```
+
+### graph
+
+基于图的DFS: 和BFS一样一般需要一个set来记录访问过的节点，避免重复访问造成死循环;
+Word XXX 系列面试中非常常见，例如word break，word ladder，word pattern，word search。
+

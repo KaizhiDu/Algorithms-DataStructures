@@ -172,6 +172,18 @@ const membershipSetupChecker = async({ propertyId, membershipToursToValidate, me
 			checkerLogs.membershipProducts.push({ productId, allGood: true });
 		}
 	}
+
+// Input: s = "3[a]2[bc]"
+// Output: "aaabcbc"
+// Example 2:
+//
+// Input: s = "3[a2[c]]"
+// Output: "accaccacc"
+// Example 3:
+//
+// Input: s = "2[abc]3[cd]ef"
+// Output: "abcabccdcdcdef"
+
 	// Check Membership Product As Package In Event Build
 	if (enableMembershipAsPackage) {
 		// we also need to check event build and go through each package see if all product included in the package are added into event build
