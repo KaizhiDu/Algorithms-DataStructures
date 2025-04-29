@@ -1,7 +1,1 @@
-{
-  a: [ { node: 'b', value: 1 } ],
-  b: [ { node: 'a', value: 1 } ],
-  c: [ { node: 'd', value: 1 } ],
-  d: [ { node: 'c', value: 1 } ]
-}
-[ null, null, 1, 1 ]
+12
