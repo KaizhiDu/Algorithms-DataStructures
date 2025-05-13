@@ -1,1 +1,4 @@
-3
+laoduxiangzhidao Map(1) { 8 => true }
+laoduxiangzhidao Map(2) { 8 => true, 5 => true }
+laoduxiangzhidao Map(3) { 8 => true, 5 => true, 0 => true }
+true

@@ -92,8 +92,9 @@ key words: 顺序  唯一
     }
 ```
 
-### graph
+## graph
 
 基于图的DFS: 和BFS一样一般需要一个set来记录访问过的节点，避免重复访问造成死循环;
 Word XXX 系列面试中非常常见，例如word break，word ladder，word pattern，word search。
 
+## Memoization Search
