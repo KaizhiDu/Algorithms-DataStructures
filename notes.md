@@ -97,4 +97,28 @@ key words: 顺序  唯一
 基于图的DFS: 和BFS一样一般需要一个set来记录访问过的节点，避免重复访问造成死循环;
 Word XXX 系列面试中非常常见，例如word break，word ladder，word pattern，word search。
 
-## Memoization Search
+## DFS + Memoization Search
+
+当你遇到：
+
+明显的 子问题重叠（重复子结构）
+有多个选择，每个选择都可能递归下去（典型：字符串拆分、走迷宫、匹配路径）
+暂时不确定最终解法，但可以尝试所有可能（“试探法”）
+你不关心 具体路径，而只关心 能不能走通 / 有多少种方式
+
+```
+    const memo = new Map();
+    const dfs = (state1, state2, ...) => {
+        const key = `${state1}-${state2}`; // ⬅️ 定义唯一状态 key
+        if (memo.has(key)) return memo.get(key);
+    
+        // base case
+        if (满足结束条件) return true / value;
+    
+        let result = 计算子问题结果（如 dfs(nextState1, ...)）
+    
+        memo.set(key, result); // ✅ 不管结果 true 还是 false 都缓存
+        return result;
+    };
+
+```
